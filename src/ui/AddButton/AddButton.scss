@@ -1,0 +1,13 @@
+.circular-red-button{
+    @extend .shadow-sm;
+    margin: 1rem;
+    color: $white;
+    background-color:$pink;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    &:hover{
+        @extend .shadow;
+        color: $white;
+    }
+  }
