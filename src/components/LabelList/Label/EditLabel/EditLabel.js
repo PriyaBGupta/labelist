@@ -9,8 +9,8 @@ class EditLabel extends Component{
     }
     componentDidMount(){
         this.setState({
-            labelColor: this.props.labelColor,
-            labelName: this.props.labelName
+            labelColor: this.props.label.labelColor,
+            labelName: this.props.label.labelName
         })
     }
     handleColorChange = ({hex}) =>{
@@ -50,7 +50,7 @@ class EditLabel extends Component{
                         </div> : null }
                     </div>
                     <div className="col-auto">
-                        <button type="button" className="btn btn-primary" onClick={()=>this.props.edit(this.state.labelName, this.state.labelColor ,this.props.id)}>Update</button>
+                        <button type="button" className="btn btn-primary" onClick={()=>this.props.edit(this.state.labelName, this.state.labelColor, this.props.label.id)}>Update</button>
                     </div>
                 </div>
             </form>

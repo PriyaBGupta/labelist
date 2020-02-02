@@ -17,7 +17,7 @@ const Label = ({labelName, labelColor, id, edit}) => {
         </div>
       </div>
       <div className="row">
-        {labelState.showEditLabel?<EditLabel labelName={labelName} labelColor={labelColor} id={id} edit={edit}></EditLabel>:null}
+        {labelState.showEditLabel ? <EditLabel label={{labelName, labelColor, id}} edit={edit}></EditLabel>:null}
       </div>
     </div>
   )
