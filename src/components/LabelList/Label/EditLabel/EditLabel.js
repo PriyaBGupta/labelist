@@ -14,6 +14,7 @@ class EditLabel extends Component{
         })
     }
     handleColorChange = ({hex}) =>{
+        console.log(hex,'hex');
         this.setState({
             labelColor: hex,
             //displayColorPicker:false
