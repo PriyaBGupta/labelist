@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "769c41e542d64e1227e86bb8c80d6fdb",
+    "revision": "92b10ef8ce619e67041169b11b592d99",
     "url": "/labelist/index.html"
   },
   {
-    "revision": "1bba00913941688b045a",
-    "url": "/labelist/static/css/main.9d68c8a2.chunk.css"
+    "revision": "e1a73f016488a0a3bb69",
+    "url": "/labelist/static/css/main.76cfac9d.chunk.css"
   },
   {
     "revision": "d613a8138f38eca1460d",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/labelist/static/js/2.715876aa.chunk.js.LICENSE"
   },
   {
-    "revision": "1bba00913941688b045a",
-    "url": "/labelist/static/js/main.895a15e2.chunk.js"
+    "revision": "e1a73f016488a0a3bb69",
+    "url": "/labelist/static/js/main.1af38c46.chunk.js"
   },
   {
     "revision": "00184fabc1f77ba717ff",
