@@ -55,8 +55,8 @@ class AddLabel extends Component {
             buttonClasses.push('is-invalid');
         }
         return (
-            <div className="row">
-                <form autoComplete="off">
+            <div>
+                <form autoComplete="off" className="border border-info pt-3 rounded-sm">
                     <div className="form-row">
                         <div className="form-group has-danger">
                             <div className="col">

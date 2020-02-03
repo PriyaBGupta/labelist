@@ -45,7 +45,7 @@ class App extends Component{
       <div className="container">
         <h3 className="p-2">Stage Player</h3>
         <div className="row">
-          <div className="col-4">
+          <div className="col-5">
             <LabelList {...this.state} edit={(labelName, labelColor, id) => this.editHandler(labelName, labelColor ,id)}></LabelList>
             <AddButton click={this.showAddHandler}></AddButton>
             {this.state.showAddLabel ? <AddLabel add={(labelName,labelColor) => this.addHandler(labelName,labelColor)}></AddLabel> : null}
