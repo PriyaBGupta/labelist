@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "47841755362d6e1da52e5f5a8349be9c",
+    "revision": "da0f57e83e8785a67b7568c522207c52",
     "url": "/labelist/index.html"
   },
   {
-    "revision": "c852c81feb987340b8f8",
+    "revision": "8caeb035b2282cc161b5",
     "url": "/labelist/static/css/main.76cfac9d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/labelist/static/js/2.715876aa.chunk.js.LICENSE"
   },
   {
-    "revision": "c852c81feb987340b8f8",
-    "url": "/labelist/static/js/main.3bb3eda3.chunk.js"
+    "revision": "8caeb035b2282cc161b5",
+    "url": "/labelist/static/js/main.89ac9049.chunk.js"
   },
   {
     "revision": "00184fabc1f77ba717ff",
