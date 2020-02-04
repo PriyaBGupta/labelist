@@ -10,7 +10,7 @@ const Label = ({labelName, labelColor, id, edit}) => {
     <div className="list-group-item">
       <div className="row">
         <div className="col">
-          <span className="badge" style={{backgroundColor: labelColor}}>{labelName}</span>
+          <span className="badge text-white" style={{backgroundColor: labelColor}}>{labelName}</span>
         </div>
         <div className="col-auto">
           <button type="button" className="btn shadow-sm" onClick={showEditLabelHandler}><i className="fa fa-pencil"></i></button>
