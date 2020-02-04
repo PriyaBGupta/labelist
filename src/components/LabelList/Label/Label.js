@@ -4,7 +4,7 @@ import EditLabel from './EditLabel/EditLabel';
 const Label = ({labelName, labelColor, id, edit}) => {
   const [labelState,setShowEditLabel] = useState({showEditLabel: false});
   const showEditLabelHandler = () => {
-    setShowEditLabel({showEditLabel: true});
+    setShowEditLabel({showEditLabel: !labelState.showEditLabel});
   }
   return (
     <div className="list-group-item">

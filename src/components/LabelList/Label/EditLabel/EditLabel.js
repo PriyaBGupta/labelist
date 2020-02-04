@@ -83,8 +83,10 @@ class EditLabel extends Component {
                                 </div> : null}
                             </div>
                         </div>
+                        <div className="form-group">
                         <div className="col-auto">
                             <button type="button" className="btn btn-primary" disabled={!this.state.formValid} onClick={() => this.props.edit(this.state.labelName, this.state.labelColor, this.props.label.id)}>Update</button>
+                        </div>
                         </div>
                     </div>
                 </form>
