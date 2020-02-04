@@ -23,6 +23,7 @@ class AddLabel extends Component {
             labelColor: hex,
             labelColorValid: this.checkValidity(hex),
             labelColorTouched: true,
+            displayColorPicker: false
         }, this.validateForm);
     }
     handleColorPicker = () => {
