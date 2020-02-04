@@ -26,7 +26,7 @@ class App extends Component{
     const newLabel ={
       labelName,
       labelColor,
-      id:Math.random
+      id:Math.random()
     }
     this.setState({showAddLabel: false});
     const labelList = [...this.state.labelList];
@@ -35,7 +35,7 @@ class App extends Component{
   }
   editHandler = (labelName, labelColor, id) => {
     const labelIndex = this.state.labelList.findIndex(l=>(l.id === id));
-    const label={labelName, labelColor};
+    const label={labelName, labelColor , id};
     const updateLabelList = [...this.state.labelList];
     updateLabelList[labelIndex] = label;
     this.setState({labelList:updateLabelList});
@@ -46,7 +46,7 @@ class App extends Component{
         <h3 className="p-2">Stage Player</h3>
         <div className="row">
           <div className="col col-sm-5">
-            <LabelList {...this.state} edit={(labelName, labelColor, id) => this.editHandler(labelName, labelColor ,id)}></LabelList>
+            <LabelList {...this.state} edit={(labelName, labelColor, id) => this.editHandler(labelName, labelColor, id)}></LabelList>
             <AddButton click={this.showAddHandler}></AddButton>
             {this.state.showAddLabel ? <AddLabel add={(labelName,labelColor) => this.addHandler(labelName,labelColor)}></AddLabel> : null}
           </div>

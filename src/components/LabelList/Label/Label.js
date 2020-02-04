@@ -7,6 +7,9 @@ const Label = ({ labelName, labelColor, id, edit }) => {
 	const showEditLabelHandler = () => {
 		setShowEditLabel({ showEditLabel: !labelState.showEditLabel });
 	}
+	const editLabelHandler = () => {
+		setShowEditLabel({ showEditLabel: false});
+	}
 	return (
 		<div className="list-group-item">
 			<LabelCard label={{ labelName, labelColor }} showEdit={showEditLabelHandler} />

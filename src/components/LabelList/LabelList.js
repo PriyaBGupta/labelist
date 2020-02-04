@@ -6,7 +6,7 @@ const LabelList = ({edit, labelList}) => {
           <div className="list-group">
             {labelList.map(label => {
                 return (
-                  <Label {...label} key={label.labelName} edit={edit}/>
+                  <Label {...label} key={label.id} edit={edit}/>
                 )
             })} 
           </div>
