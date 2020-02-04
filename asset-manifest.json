@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/labelist/static/css/main.76cfac9d.chunk.css",
-    "main.js": "/labelist/static/js/main.89ac9049.chunk.js",
-    "main.js.map": "/labelist/static/js/main.89ac9049.chunk.js.map",
+    "main.js": "/labelist/static/js/main.f57d3ec8.chunk.js",
+    "main.js.map": "/labelist/static/js/main.f57d3ec8.chunk.js.map",
     "runtime-main.js": "/labelist/static/js/runtime-main.3e1b1ba6.js",
     "runtime-main.js.map": "/labelist/static/js/runtime-main.3e1b1ba6.js.map",
     "static/js/2.715876aa.chunk.js": "/labelist/static/js/2.715876aa.chunk.js",
     "static/js/2.715876aa.chunk.js.map": "/labelist/static/js/2.715876aa.chunk.js.map",
     "index.html": "/labelist/index.html",
-    "precache-manifest.265518cf75aa340cd52587cdec9552fe.js": "/labelist/precache-manifest.265518cf75aa340cd52587cdec9552fe.js",
+    "precache-manifest.91fcd3d2e1ff54e45c1b5cf5d726a985.js": "/labelist/precache-manifest.91fcd3d2e1ff54e45c1b5cf5d726a985.js",
     "service-worker.js": "/labelist/service-worker.js",
     "static/css/main.76cfac9d.chunk.css.map": "/labelist/static/css/main.76cfac9d.chunk.css.map",
     "static/js/2.715876aa.chunk.js.LICENSE": "/labelist/static/js/2.715876aa.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.3e1b1ba6.js",
     "static/js/2.715876aa.chunk.js",
     "static/css/main.76cfac9d.chunk.css",
-    "static/js/main.89ac9049.chunk.js"
+    "static/js/main.f57d3ec8.chunk.js"
   ]
 }
