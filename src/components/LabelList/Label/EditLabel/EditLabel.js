@@ -65,7 +65,7 @@ class EditLabel extends Component {
             buttonClasses.push('is-invalid');
         }
         return (
-            <div className="pt-3">
+            <div className="row pt-3">
                 <form autoComplete="off">
                     <div className="form-row">
                         <div className="form-group has-danger">
@@ -84,9 +84,9 @@ class EditLabel extends Component {
                             </div>
                         </div>
                         <div className="form-group">
-                        <div className="col-auto">
-                            <button type="button" className="btn btn-primary" disabled={!this.state.formValid} onClick={() => this.props.edit(this.state.labelName, this.state.labelColor, this.props.label.id)}>Update</button>
-                        </div>
+                            <div className="col-auto">
+                                <button type="button" className="btn btn-primary" disabled={!this.state.formValid} onClick={() => this.props.edit(this.state.labelName, this.state.labelColor, this.props.label.id)}>Update</button>
+                            </div>
                         </div>
                     </div>
                 </form>

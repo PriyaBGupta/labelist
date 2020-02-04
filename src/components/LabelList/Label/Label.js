@@ -1,25 +1,17 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import EditLabel from './EditLabel/EditLabel';
+import LabelCard from '../../../ui/LabelCard/LabelCard'
 
-const Label = ({labelName, labelColor, id, edit}) => {
-  const [labelState,setShowEditLabel] = useState({showEditLabel: false});
-  const showEditLabelHandler = () => {
-    setShowEditLabel({showEditLabel: !labelState.showEditLabel});
-  }
-  return (
-    <div className="list-group-item">
-      <div className="row">
-        <div className="col">
-          <span className="badge text-white" style={{backgroundColor: labelColor}}>{labelName}</span>
-        </div>
-        <div className="col-auto">
-          <button type="button" className="btn shadow-sm" onClick={showEditLabelHandler}><i className="fa fa-pencil"></i></button>
-        </div>
-      </div>
-      <div className="row">
-        {labelState.showEditLabel ? <EditLabel label={{labelName, labelColor, id}} edit={edit}></EditLabel>:null}
-      </div>
-    </div>
-  )
+const Label = ({ labelName, labelColor, id, edit }) => {
+	const [labelState, setShowEditLabel] = useState({ showEditLabel: false });
+	const showEditLabelHandler = () => {
+		setShowEditLabel({ showEditLabel: !labelState.showEditLabel });
+	}
+	return (
+		<div className="list-group-item">
+			<LabelCard label={{ labelName, labelColor }} showEdit={showEditLabelHandler} />
+			{labelState.showEditLabel ? <EditLabel label={{ labelName, labelColor, id }} edit={edit}></EditLabel> : null}
+		</div>
+	)
 }
 export default Label;
