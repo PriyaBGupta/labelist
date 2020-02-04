@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LabelCard = ({label,showEdit}) => {
+const Label = ({label,showEdit}) => {
     return(
         <div className="row">
         <div className="col">
@@ -12,4 +12,4 @@ const LabelCard = ({label,showEdit}) => {
       </div>
     )
 }
-export default LabelCard;
+export default Label;

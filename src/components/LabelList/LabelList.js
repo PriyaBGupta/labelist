@@ -1,16 +1,16 @@
 import React from 'react';
-import Label from './Label/Label';
+import LabelCard from './LabelCard/LabelCard';
 
-const LabelList = ({edit, labelList}) => {
-    return(
-          <div className="list-group">
-            {labelList.map(label => {
-                return (
-                  <Label {...label} key={label.id} edit={edit}/>
-                )
-            })} 
-          </div>
-    );
+const LabelList = ({ edit, labelList }) => {
+	return (
+		<div className="list-group">
+			{labelList.map(label => {
+				return (
+					<LabelCard {...label} key={label.id} edit={edit} />
+				)
+			})}
+		</div>
+	);
 }
 
 export default LabelList;

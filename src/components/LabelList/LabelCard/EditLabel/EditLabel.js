@@ -23,7 +23,7 @@ class EditLabel extends Component {
             labelColor: this.props.label.labelColor,
             labelName: this.props.label.labelName,
             labelColorValid: true,
-            labelNameValid: true,
+            labelNameValid: true
         })
     }
     handleColorChange = ({ hex }) => {
@@ -31,7 +31,7 @@ class EditLabel extends Component {
             labelColor: hex,
             labelColorValid: this.checkValidity(hex),
             labelColorTouched: true,
-            displayColorPicker: false
+            displayColorPicker: false,
         }, this.validateForm);
 
     }
@@ -45,6 +45,10 @@ class EditLabel extends Component {
             labelNameValid: this.checkValidity(updatedLabel),
             labelNameTouched: true
         }, this.validateForm);
+    }
+    editHandler = () => {
+        this.props.edit(this.state.labelName, this.state.labelColor, this.props.label.id);
+        this.props.closeEdit();
     }
     render() {
         const popover = {
@@ -85,7 +89,7 @@ class EditLabel extends Component {
                         </div>
                         <div className="form-group">
                             <div className="col-auto">
-                                <button type="button" className="btn btn-primary" disabled={!this.state.formValid} onClick={() => this.props.edit(this.state.labelName, this.state.labelColor, this.props.label.id)}>Update</button>
+                                <button type="button" className="btn btn-primary" disabled={!this.state.formValid} onClick={this.editHandler}>Update</button>
                             </div>
                         </div>
                     </div>
