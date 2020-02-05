@@ -64,7 +64,7 @@ class EditLabel extends Component {
         if (!this.state.labelNameValid && this.state.labelNameTouched) {
             inputClasses.push('is-invalid');
         }
-        const buttonClasses = ['btn form-control shadow-sm'];
+        const buttonClasses = ['btn form-control shadow-sm text-primary'];
         if (!this.state.labelColorValid && this.state.labelColorTouched) {
             buttonClasses.push('is-invalid');
         }
